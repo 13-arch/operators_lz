@@ -4,7 +4,7 @@ output_data = open('output.txt','w')
 data=data.split
 A=int(data[0])
 B=int(data[1])
-#e=int(data[2])
+e=int(data[2])
 output_data.write(str(sum(A,B)))
 output_data.close()
 input_data.close()
