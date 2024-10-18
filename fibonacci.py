@@ -1,16 +1,16 @@
 input_data = open('input.txt', 'r')
 output = open('output.txt', 'w')
 data = input_data.read()
-data = data.split()
-output.write(str('0, '))
-a =int(data[0])
+data = data.split()#разделение элементов
+output.write(str('0, '))#вводим ноль запятую пробел потому что фибоначи начинается с нуля
+a =int(data[0])#выводи число с файла
 f1=0
 f2=1
-for i in range(1,a):
+for i in range(1,a):#промежуток
     output.write(str(f1+f2) +(', '))
-    if i%2 ==0 :
+    if i%2 ==0 :#условие
         f1=f1+f2
-    elif i%2==1:
+    elif i%2==1:#условие
         f2=f1+f2
 output.write(str(f2+f1))      
 input_data.close()
