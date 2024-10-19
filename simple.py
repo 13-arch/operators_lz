@@ -3,7 +3,7 @@ output = open('output.txt', 'w')
 data = input_data.read()
 data = data.split()#разделение элементов
 a = int(data[0])#вводим значение 
-for i in range(2, a):#цикл
+for i in range(2, a+1):#цикл
     if a%i == 0 and i != a:#условие
         output.write(str('N'))
         break#прерываем цикл
